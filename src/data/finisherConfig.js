@@ -1,5 +1,5 @@
 new FinisherHeader({
-  count: 90,
+  count: 80,
   size: {
     min: 5,
     max: 20,
@@ -21,9 +21,9 @@ new FinisherHeader({
   },
   blending: "screen",
   opacity: {
-    center: 0,
+    center: 0.5,
     edge: 0.4,
   },
-  skew: -2,
+  skew: 0,
   shapes: ["c", "s", "t"],
 });
