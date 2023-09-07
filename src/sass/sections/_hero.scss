@@ -1,0 +1,204 @@
+#hero {
+  // min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: $white-color;
+  font-weight: 400;
+  color: $secondary-color;
+  // padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  // position: relative;
+
+  // Set position sticky so the jumbotron stays fixed while you scroll.
+  position: sticky;
+
+  // If you want to set a background image on the hero section, uncomment these with your custom image
+
+  // background: url("/src/assets/cool-background.png");
+  // background-position: right;
+  // background-size: cover;
+
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    & a {
+      font-size: 2.4rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  overflow: hidden;
+  z-index: -10;
+}
+
+.background span {
+  width: 4vmin;
+  height: 4vmin;
+  border-radius: 4vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 44;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+  color: #ffae1a;
+  top: 7%;
+  left: 6%;
+  animation-duration: 15s;
+  animation-delay: -6s;
+  transform-origin: 20vw 4vh;
+  box-shadow: 8vmin 0 1.605043403349927vmin currentColor;
+}
+
+.background span:nth-child(1) {
+  color: #ffae1a;
+  top: 54%;
+  left: 75%;
+  animation-duration: 20s;
+  animation-delay: -44s;
+  transform-origin: 11vw -1vh;
+  box-shadow: -8vmin 0 1.670885252210737vmin currentColor;
+}
+
+.background span:nth-child(2) {
+  color: #333333;
+  top: 71%;
+  left: 16%;
+  animation-duration: 62s;
+  animation-delay: -12s;
+  transform-origin: -11vw 15vh;
+  box-shadow: 8vmin 0 1.7286807560886164vmin currentColor;
+}
+
+.background span:nth-child(3) {
+  color: #333333;
+  top: 14%;
+  left: 39%;
+  animation-duration: 11s;
+  animation-delay: -32s;
+  transform-origin: 16vw 21vh;
+  box-shadow: -8vmin 0 1.220475807485957vmin currentColor;
+}
+
+.background span:nth-child(4) {
+  color: #ffae1a;
+  top: 48%;
+  left: 55%;
+  animation-duration: 64s;
+  animation-delay: -19s;
+  transform-origin: 10vw -19vh;
+  box-shadow: 8vmin 0 1.2740514182114753vmin currentColor;
+}
+
+.background span:nth-child(5) {
+  color: #000000;
+  top: 49%;
+  left: 96%;
+  animation-duration: 54s;
+  animation-delay: -39s;
+  transform-origin: -9vw 8vh;
+  box-shadow: -8vmin 0 1.5358877632832186vmin currentColor;
+}
+
+.background span:nth-child(6) {
+  color: #ffae1a;
+  top: 27%;
+  left: 88%;
+  animation-duration: 24s;
+  animation-delay: -37s;
+  transform-origin: -18vw -23vh;
+  box-shadow: 8vmin 0 1.2879871101309042vmin currentColor;
+}
+
+.background span:nth-child(7) {
+  color: #333333;
+  top: 17%;
+  left: 46%;
+  animation-duration: 51s;
+  animation-delay: -33s;
+  transform-origin: -17vw -24vh;
+  box-shadow: -8vmin 0 1.5281257191122368vmin currentColor;
+}
+
+.background span:nth-child(8) {
+  color: #000000;
+  top: 14%;
+  left: 51%;
+  animation-duration: 22s;
+  animation-delay: -16s;
+  transform-origin: -16vw 9vh;
+  box-shadow: -8vmin 0 1.198106731182258vmin currentColor;
+}
+
+.background span:nth-child(9) {
+  color: #ffae1a;
+  top: 67%;
+  left: 69%;
+  animation-duration: 28s;
+  animation-delay: -5s;
+  transform-origin: 17vw -19vh;
+  box-shadow: 8vmin 0 1.9477422522754848vmin currentColor;
+}
