@@ -1,9 +1,10 @@
 export const defaultProps = {
   easing: "cubic-bezier(0.5, 0, 0, 1)",
-  distance: "30px",
+  distance: "50px",
   duration: 1000,
   desktop: true,
   mobile: true,
+  opacity: 0
 };
 
 export const targetElements = [
@@ -25,7 +26,14 @@ export const targetElements = [
   {
     element: ".hero-cta",
     animation: {
-      delay: 1000,
+      delay: 500,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
+    },
+  },
+  {
+    element: ".hero-profile",
+    animation: {
+      delay: 800,
       origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },
