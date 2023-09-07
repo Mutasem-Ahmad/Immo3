@@ -1,8 +1,6 @@
 // Section
 section {
-  &::not(:first-child) {
-    padding: 5rem 0rem;
-  }
+  padding: 5rem 0rem;
 
   @include respond(phone) {
     border: none;
